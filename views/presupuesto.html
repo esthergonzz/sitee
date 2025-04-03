@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Lenguaje Español-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - Fine Line Illustrations</title> <!--Título de la Página -->
+    <link rel="stylesheet" href="./../CSS/estilos.css"> <!-- Vinculamos el proyecto con el proyecto de CSS-->
+</head>
+
+<body> <!--Cuerpo-->
+    <header> <!--Cabecera-->
+        <img class="logo" src="../images/LOGO.png" alt="Logo"> <!-- Importamos en el menu de navegación el logo-->
+
+        <nav> <!--Dentro de la etiqueta de navegación ponemos las 4 páginas diferentes -->
+            <ul>
+                <li><a href="./../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./presupuesto.html" class="activo">Presupuesto</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>   
+        </nav>
+    </header> <!--Cerramos cabecera-->
+
+   <main> <!--Main-->
+        <section class="presupuesto"> <!--En este caso, solo hay una sección-->
+        <h1>Solicite un Presupuesto</h1> <!--Título-->
+        <form action="presupuestos.php" method="post"> <!--Abrimos el formulario-->
+
+            <label for="nombre">Nombre completo</label> <!--Pedimos el nombre-->
+            <input type="text" name="nombre" id="nombre" maxlength="25"><br>
+
+            <label for="correo">Email</label> <!--Pedimos el email-->
+            <input type="email" name="correo" id="correo" maxlength="25"><br>
+
+            <label for="telefono">Teléfono</label> <!--Pedimos el teléfono-->
+            <input type="tel" name="telefono" id="telefono" maxlength="9"><br>
+
+            <label for="informacion">Solicite mas información</label> <!--Damos la opción de que puedan consultar cualquier duda-->
+            <textarea name="informacion" id="informacion"></textarea><br>
+
+            <label> <!-- En este caso ponemos una casilla, que es obligatoria aceptarla para poder enviar el formulario-->
+                <input type="checkbox" name="politica" required> Acepto la Politica de Privacidad
+            </label>
+
+            <button type="submit">Enviar</button> <!--Botón de enviar-->
+
+        </form> <!--Cerramos el formulario-->
+        </section>
+   </main> <!--Cerramos main-->
+
+   <footer> <!--Pie de página-->
+        <div class="footer-contenido"> <!--Aplicamos la etiqueta div para encapsular y dar un estilo al siguiente contenido-->
+            <p>&copy; Fine Line Illustrations - 2025  Todos los derechos reservados</p> <!--Derechos-->
+            <p>C. del Duque de Sesto, 7</p><br> <!--Ubicación-->
+            <div class="redes"> <!--Encapsulamos de nuevo con otra etiqueta div a los logos utilizamos también "target" para que dirija al usuario a otra pestaña-->
+                <a href="https://www.instagram.com/" target="_blank"><img src="./../images/logoIg.png" alt="Instagram"></a>
+                <a href="https://x.com/" target="_blank"><img src="./../images/twitterLogo.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer> <!--Cerramos pie de página-->
+
+</body>
+
+</html> <!--Cerramos el proyecto-->
