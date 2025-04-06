@@ -78,6 +78,22 @@ body{
 }
 
 
+/*ESTILO PÁGINA DE PRODUCTOS (HE REUTILIZADO LA CLASE DE INTRODUCCIÓN)*/
+.grid-productos{
+    display:grid; /*Creamos la cuadrícula*/
+    grid-template-columns: repeat(3,1fr); /*Las 3 columnas*/
+    gap: 20px; /*Espacio entre imágenes*/
+    padding: 20px /*Espaciado interno*/
+}
+
+.grid-productos img{
+    width: 100%; /*Adaptamos la imagen a su contenedor*/
+    height: auto; /*Mantenemos proporción*/
+    object-fit: cover; /*Para que se mantenga la proporción*/
+    border-radius: 10px; /*Redondeamos bordes*/
+}
+
+
 /*ESTILO PÁGINA DE PRESUPUESTO*/
 .presupuesto{
     max-width: 600px; /*Máxima anchura del formulario*/
@@ -111,6 +127,15 @@ input, textarea{
     font-size: 16px; /*Tamaño de fuente*/
 }
 
+input:focus, textarea:focus{
+    border-color:#ff6600; /*Color del borde*/
+    outline: none;
+}
+
+input:valid{ 
+    background-color: rgb(215, 235, 194); /*Si es válido el fondo será verde*/
+}
+
 button{
     margin-top: 20px; /*Espaciado superior*/
     padding: 10px; /*Espaciado interno*/
@@ -126,7 +151,8 @@ button:hover{
     background-color: #cc5200; /*Cambia el color cuando te sitúas en él*/
 }
 
-/*PARA LA PÁGINA DE PRODUCTOS HE REUTILIZADO LAS CLASES INTRODUCCIÓN E IMÁGENES*/
+
+
 
 /*ESTILO DE LA PÁGINA DE CONTACTO*/
 .contacto{
