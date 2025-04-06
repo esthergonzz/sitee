@@ -27,13 +27,13 @@
         <form action="presupuestos.php" method="post"> <!--Abrimos el formulario-->
 
             <label for="nombre">Nombre completo</label> <!--Pedimos el nombre-->
-            <input type="text" name="nombre" id="nombre" maxlength="25"><br>
+            <input type="text" name="nombre" id="nombre" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}(?:\s[A-Za-zÁÉÍÓÚáéíóúÑñ]{2,})+$"><br>
 
             <label for="correo">Email</label> <!--Pedimos el email-->
-            <input type="email" name="correo" id="correo" maxlength="25"><br>
+            <input type="email" name="correo" id="correo" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
 
             <label for="telefono">Teléfono</label> <!--Pedimos el teléfono-->
-            <input type="tel" name="telefono" id="telefono" maxlength="9"><br>
+            <input type="tel" name="telefono" id="telefono" required pattern="[0-9]{9}"><br>
 
             <label for="informacion">Solicite mas información</label> <!--Damos la opción de que puedan consultar cualquier duda-->
             <textarea name="informacion" id="informacion"></textarea><br>
